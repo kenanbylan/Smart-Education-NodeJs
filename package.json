@@ -1,0 +1,31 @@
+{
+  "name": "smart-education",
+  "version": "1.0.0",
+  "description": "Education project",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenanbylan/Smart-Education.git"
+  },
+  "keywords": [
+    "education",
+    "portal",
+    "node",
+    "js"
+  ],
+  "author": "Kenan Baylan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenanbylan/Smart-Education/issues"
+  },
+  "homepage": "https://github.com/kenanbylan/Smart-Education#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
