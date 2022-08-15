@@ -1,5 +1,7 @@
 const express = require("express");
 
+const pageRouter = require("./router/index");
+
 const app = express();
 
 //Template Engine
@@ -9,16 +11,7 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 //Routes
-app.get("/", (req, res, next) => {
-  res.status(200).render("index", {
-    page_name: "index",
-  });
-});
-app.get("/about", (req, res, next) => {
-  res.status(200).render("about", {
-    page_name: "about",
-  });
-});
+app.get("/", pageRouter);
 
 const port = 3000;
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
